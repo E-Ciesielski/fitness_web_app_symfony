@@ -6,8 +6,8 @@
         <div class="h1 my-4">2100 kcal</div>
     </div>
     <div class="d-flex justify-content-between mb-3 align-items-end">
-        <form>
-            <input type="date">
+        <form method="GET" action="{{ path('app_calories_index') }}">
+            <input type="date" value="{{ date }}" aria-label="date" id="date" name="date" onchange="this.form.submit()">
         </form>
         <a class="btn btn-primary">New</a>
     </div>
